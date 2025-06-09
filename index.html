@@ -5,7 +5,7 @@
     <title>Школьный фотограф</title>
     <style>
         body { font-family: sans-serif; background: #f0f0f0; text-align: center; }
-        .game-area { margin: 20px auto; width: 800px; height: 400px; background: #fff; border: 2px solid #ccc; position: relative; }
+        .game-area { margin: 20px auto; width: 800px; height: 250px; background: #fff; border: 2px solid #ccc; position: relative; }
         .creature { position: absolute; width: 100px; transition: 0.3s; }
         .creature.happy { transform: scale(1.1) rotate(-5deg); filter: brightness(1.2); }
         .creature.shy { transform: scale(0.95) rotate(5deg); filter: grayscale(0.7); }
@@ -70,7 +70,7 @@
             el.dataset.eyes = "open";
             el.className = "creature";
             el.style.left = (40 + index * 90) + "px";
-            el.style.top = (150 + Math.random() * 50) + "px";
+            el.style.top = (50 + Math.random() * 30) + "px";
             gameArea.appendChild(el);
 
             const character = { el, isOpen: true };
